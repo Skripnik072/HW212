@@ -1,0 +1,12 @@
+h1 {
+    colors: black;
+}
+table, th {
+    border: 1px solid black;
+}
+.center-items {
+    text-align: center;
+}
+a {
+    text-align: left;
+}
