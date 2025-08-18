@@ -2,11 +2,16 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
 import time
 
+# Для начала определим настройки запуска
 hostName = "127.0.0.1"
 serverPort = 8080
 
 
 class MyServer(BaseHTTPRequestHandler):
+    """
+        Специальный класс, который отвечает за
+        обработку входящих запросов от клиентов
+    """
     def do_GET(self):
         # Указываем путь к файлу contacts.html
         file_path = 'contacts.html'
